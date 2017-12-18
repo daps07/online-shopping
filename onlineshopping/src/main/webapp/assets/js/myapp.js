@@ -1,4 +1,4 @@
-$(function() {
+/*$(function() {
 	
 	// for adding a loader
 	$(window).load(function(){
@@ -332,7 +332,7 @@ $(function() {
 		
 	}
 	
-	/*validating the loginform*/
+	validating the loginform
 	
 	// validating the product form element	
 	// fetch the form element
@@ -376,8 +376,8 @@ $(function() {
 		
 	
 	
-	/*------*/
-	/* for fading out the alert message after 3 seconds */
+	------
+	 for fading out the alert message after 3 seconds 
 	$alert = $('.alert');
 	if($alert.length) {
 		setTimeout(function() {
@@ -386,8 +386,8 @@ $(function() {
 		);		
 	}
 		
-	/*------*/
-	/* handle refresh cart*/	
+	------
+	 handle refresh cart	
 	$('button[name="refreshCart"]').click(function(){
 		var cartLineId = $(this).attr('value');
 		var countField = $('#count_' + cartLineId);
@@ -411,4 +411,21 @@ $(function() {
 			}
 		}
 	});			
+});*/
+
+
+$(function () {
+	
+	switch(menu){
+	
+	case 'About Us': 
+		$('#about').addClass('active');
+		break;
+	case 'Contact Us':
+		$('#contact').addClass('active');
+		break;
+	default:	
+		$('#home').addClass('active');
+		break;
+	}
 });
